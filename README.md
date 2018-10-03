@@ -8,10 +8,10 @@ El ejecutable no funcionara si no existe una base en SQL Server.
 3. Dentro de Visual Studio, en el explorador de soluciones dar click a Prueba.sln
 4. En SQL Server crear una base Prueba con una tabla pasante, la cual el sql esta dado en el proyecto en la 
 carpeta llamada Base.
-6. Regresemos a Visual Studio y cambiar la linea 18 de la Clase Conexion: 
+6. Regresemos a Visual Studio y cambiar la linea 18 de la Clase "Conexion": 
 conector = new SqlConnection("Data Source = MENDOZA; Initial Catalog = Prueba; Integrated Security = True");
 en Data Source cambiar el MENDOZA por el nombre de la instancia de su SQL Server.Guardar
-7. En la carpeta del proyecto se encuentra un archivo APP, editarlo y buscar lo siguiente:
+7. En la carpeta del proyecto se encuentra un archivo "APP.config", editarlo y buscar lo siguiente:
 <connectionStrings>
         <add name="Prueba.Properties.Settings.PruebaConnectionString"
             connectionString="Data Source=MENDOZA;Initial Catalog=Prueba;Integrated Security=True"
